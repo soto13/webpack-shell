@@ -1,0 +1,691 @@
+$cyan: #1c425b;
+$gray: #f4f6f6;
+$white: #ffffff;
+$darkBlue: #1D468B;
+$lightBlue: rgb(29, 70, 139);
+$lightGray: #40464D;;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: normal;
+  box-sizing:border-box;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.external {
+  stroke: $lightGray;
+  stroke-width: 2;
+  fill: transparent;
+  opacity: 1;
+  -webkit-transition: opacity .25s ease;
+  transition: opacity .25s ease;
+}
+
+.border {
+  stroke: $lightGray;
+  stroke-width: 2;
+  fill: transparent;
+}
+
+.inner {
+  fill: $lightGray;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.navigator {
+  position: fixed;
+  top: 15.5em;
+  padding: 1.5em;
+  right: 0px;
+  ul {
+    list-style-type: none;
+    li {
+      padding: .2em 0;
+    }
+  }
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.wrapper {
+  padding: 11.5em 5.5em;
+}
+
+.spanish {
+  left: 2.5em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title {
+  color: $darkBlue;
+  font-size: 2.2em;
+}
+
+.subtitle {
+  color: $lightBlue;
+}
+
+.word {
+  color: $lightGray;
+  font-weight: 100;
+}
+
+.word-footer {
+  color: $white;
+  font-weight: 100;
+}
+
+.small {
+  font-size:11px;
+}
+
+.font_6 {
+  margin: 0;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+#menu {
+  background-color: $cyan;
+  padding: 2.5em;
+  span, h3 {
+    color: $white;
+  }
+  ul {
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+    #options {
+      float: right;
+      padding-top: .8em;
+      a {
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        /* span:hover {
+          background-color: rgb(165, 245, 245);
+        } */
+      }
+    }
+    .logo {
+      float: left;
+    }
+  }
+
+  #language {
+    #tabs {
+      display: -webkit-inline-box;
+      padding: 0;
+      #tab {
+        border-radius: .3em;
+        width: 100%;
+        max-width: 9.0em;
+        padding-right: 0px;
+        margin-right: 5px;
+        text-align: center;
+        background-color: #758596;
+        display: -webkit-box;
+        cursor: pointer;
+        .icon {
+          max-width: 1.5em;
+        }
+        p {
+          padding-left: .3em;
+          margin-bottom: 0px;
+          text-align: center;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+#ollpay {
+  background-color: $cyan;
+  h1 {
+    color: $white;
+    font-size: 2.6em;
+  }
+  padding-bottom: 5.5em;
+}
+
+#what-we-do {
+  background-color: $white;
+  /* position: relative; */
+  h4 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+#info {
+  background-color: $gray;
+  /* position: relative; */
+  h4 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .word {
+    width: 12.5em;
+  }
+
+  #info-word-1 {
+    width: 13.5em;
+  }
+
+  #info-word-2 {
+    width: 14.7em;
+  }
+
+  #container-info {
+    padding-top: 6.5em;
+    padding-bottom: 6.5em;
+    #text-info-3 {
+      #info-word-3 {
+        margin-left: -3.5em;
+        p {
+          width: 11.5em;
+        }
+      }
+    }
+    .first-container {
+      margin-left: 2.5em;
+      margin-right: 2.5em;
+    }
+  }
+}
+
+#products {
+  background-color: $white;
+  /* position: relative; */
+  .container {
+    padding-top: 8.5em;
+    padding-bottom: 4.5em;
+    #both-phones {
+      left: 8.5em;
+    }
+    .container {
+      .small {
+        padding-top: .8em;
+      }
+      p {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+#detail {
+  background-color: $gray;
+  /* position: relative; */
+  .container {
+    padding-top: 7.5em;
+    padding-bottom: 5.5em;
+    h4 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    .detail-title {
+      padding-left: 13.5em;
+      padding-right: 13.5em;
+    }
+    .detail-word {
+      padding-left: 11.5em;
+      padding-right: 11.5em;
+    }
+  }
+}
+
+#contact {
+  background-color: $white;
+  /* position: relative; */
+  padding-top: 7.5em;
+  padding-bottom: 5.5em;
+  h4 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+  #form-contact {
+    margin-left: 26.5em;
+  }
+  /* Input material */
+  /* form starting stylings ------------------------------- */
+  .group {
+    position: relative;
+    margin-bottom: 1.5em;
+  }
+  .group-button {
+    position: relative;
+    margin-bottom: 1.5em;
+    left: 14.5em;
+  }
+  input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #757575;
+  }
+  input:focus { outline:none; }
+
+  /* LABEL ======================================= */
+  label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all; 
+    -moz-transition: 0.2s ease all; 
+    -webkit-transition: 0.2s ease all;
+  }
+
+  /* active state */
+  input:focus ~ label, input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: $cyan;
+  }
+
+  /* BOTTOM BARS ================================= */
+  .bar { position: relative; display: block; width: 300px; }
+  .bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: $cyan;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  .bar:before {
+    left: 50%;
+  }
+  .bar:after {
+    right: 50%;
+  }
+
+  /* active state */
+  input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width: 50%;
+  }
+
+  /* HIGHLIGHTER ================================== */
+  .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  /* active state */
+  input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+  }
+
+  textarea {
+    display: block;
+    width: 100%;
+    border: 0;
+    padding: 10px 5px;
+    background: white no-repeat;
+    font-size: 18px;
+    width: 300px;
+    
+    /*
+    * IMPORTANT PART HERE
+    */
+    
+    /* 2 imgs : 1px gray line (normal state) AND 2px green line (focus state) */
+    background-image: linear-gradient(to bottom, $cyan, $cyan), linear-gradient(to bottom, silver, silver);
+    /* sizes for the 2 images (default state) */
+    background-size: 0 2px, 100% 1px;
+    /* positions for the 2 images. Change both "50%" to "0%" or "100%" and tri again */
+    background-position: 50% 100%, 50% 100%;
+
+    /* animation solely on background-size */
+    transition: background-size 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+
+  }
+
+  textarea:focus{
+    /* sizes for the 2 images (focus state) */
+    background-size: 100% 2px, 100% 1px;
+    outline: none;
+  }
+
+  /* ANIMATIONS ================ */
+  @-webkit-keyframes inputHighlighter {
+    from { background: $cyan; }
+    to { width: 0; background: transparent; }
+  }
+  @-moz-keyframes inputHighlighter {
+    from { background: $cyan; }
+    to { width: 0; background: transparent; }
+  }
+  @keyframes inputHighlighter {
+    from { background: $cyan; }
+    to { width: 0; background: transparent; }
+  }
+  /* End input material */
+}
+
+#footer {
+  background-color: #0f293c;
+  /* position: relative; */
+  .container {
+    padding: 2.5em 2.5em;
+    p {
+      padding-top: 1.8em;
+    }
+    .footer {
+      padding: 0px 3.5em;
+    }
+    .coopy {
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .background {
+    height: auto;
+  }
+
+  #menu {
+    .container {
+      ul {
+        .logo {
+          float: none;
+          padding: .5em 9.5em;
+        }
+        #options {
+          float: none;
+        }
+      }
+    }
+    .container {
+      #language {
+        margin-right: 0px;
+        margin-left: 0px;
+        .spanish {
+          left: 8.5em;
+        }
+        #tabs {
+          width: 50%;
+          padding: 0em 1.5em;
+        }
+      }
+    }
+  }
+
+  #ollpay {
+    h1 {
+      text-align: center;
+    }
+    a {
+      padding: 0em 14.5em;
+    }
+    #phone {
+      margin: 0em 12.5em;
+    }
+  }
+
+  #info {
+    #container-info {
+      .first-container {
+        margin-left: 0em;
+        margin-right: 0em;
+      }
+      .offset-md-5 {
+        margin-left: 39.666667%;
+      }
+      .offset-md-4 {
+        margin-left: 31.333333%;
+      }
+      #info-word-1 {
+        margin: 0em 15em;
+      }
+      #info-word-2 {
+        margin: 0em 1em;
+      }
+      #text-info-3 {
+        #info-word-3 {
+          margin: 0em 2em;
+        }
+      }
+    }
+  }
+
+  #products {
+    .container {
+      #both-phones {
+        padding: 0em 8.5em;
+        left: 0em;
+      }
+    }
+  }
+
+  #detail {
+    .container {
+      .detail-title {
+        padding: 0em 5.5em;
+      }
+    }
+  }
+
+  #contact {
+    #form-contact {
+      margin: 0em 12.5em;
+      .group-button {
+        padding-left: 14.5em;
+        left: 0em;
+      }
+    }
+  }
+
+  #footer {
+    .container {
+      #logo-footer {
+      }
+      p {
+        text-align: center;
+      }
+      .footer {
+        text-align: center;
+      }
+      .coopy {
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .background {
+    height: auto;
+  }
+
+  .title {
+    font-size: 1.5em;
+  }
+
+  .wrapper {
+    padding: 11.5em 1.8em;
+  }
+  
+  .spanish {
+    left: 0;
+  }
+
+  #menu {
+    padding: 0;
+    .container {
+      padding: 1.5em 0em;
+      ul {
+        .logo {
+          padding-bottom: 2.5em;
+        }
+        #options {
+          float: none;
+        }
+      }
+    }
+    .container {
+      #language {
+        margin-right: 0px;
+        margin-left: 0px;
+        #tabs {
+          width: 50%;
+          padding: 0em 1.5em;
+        }
+      }
+    }
+  }
+
+  #ollpay {
+    h1 {
+      font-size: 2.5em;
+    }
+    a {
+      padding: 0em 3.5em;
+    }
+    #phone {
+      padding: 0em 1.8em;
+    }
+  }
+
+  #info {
+    #container-info {
+      .first-container {
+        margin-left: 0em;
+        margin-right: 0em;
+      }
+      #info-word-1 {
+        margin: 0em 3.0em;
+      }
+      #info-word-2 {
+        margin: 0em 3.0em;
+      }
+      #text-info-3 {
+        #info-word-3 {
+          margin: 0em 4.0em;
+        }
+      }
+    }
+  }
+
+  #products {
+
+    .container {
+      #both-phones {
+        left: 0px;
+        img {
+          width: 21.5em;
+        }
+      }
+    }
+  }
+
+  #detail {
+    .container {
+      .detail-title {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .detail-word {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+
+  #contact {
+    background-color: $white;
+    padding-top: 7.5em;
+    padding-bottom: 5.5em;
+    h4 {
+      text-align: center;
+    }
+  
+    p {
+      text-align: center;
+    }
+    #form-contact {
+      margin-left: 0em;
+      padding: 0px 2.3em;
+    }
+    .group-button {
+      left: 0em;
+      padding: 0px 7.5em;
+    }
+  }
+
+  #footer {
+    background-color: #0f293c;
+    /* position: relative; */
+    .container {
+      padding: 2.5em 2.5em;
+      #logo-footer {
+        padding: 0em 2.0em;
+      }
+      p {
+        padding-top: 1.8em;
+        text-align: center;
+      }
+      .footer {
+        padding: 0px 3.5em;
+      }
+      .coopy {
+        text-align: center;
+      }
+    }
+  }
+
+}
